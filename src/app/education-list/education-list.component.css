@@ -1,0 +1,18 @@
+.accordionStyle {
+    background-color: #006599 !important;
+    color: white !important;
+}
+
+::ng-deep .card.customClass,
+::ng-deep .card.customClass .card-header,
+::ng-deep .panel.customClass  {
+  background-color: #006599;
+  color: #fff !important;
+}
+::ng-deep .panel-heading, .panel-title {
+    color: #fff !important;
+}
+::ng-deep .panel.customClass .panel-body {
+  background-color: #006599;
+  color: black;
+}

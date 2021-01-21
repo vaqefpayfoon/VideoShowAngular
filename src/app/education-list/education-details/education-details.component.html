@@ -1,0 +1,23 @@
+
+<!-- <a
+  style="cursor: pointer;"
+  [routerLink]="[educationTopic.educationalTopicId]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="text-center">
+    <h4 class="list-group-item-heading text-center">{{ educationTopic.educationalTopicName }}</h4>
+  </div>
+  &nbsp; &nbsp; &nbsp; 
+  <span class="pull-right">
+    <i class="fa fa-video-camera" style="font-size: 25px;"></i>
+  </span>
+</a> -->
+<!-- (click)="navigation(item.documentId)" -->
+<ul class="list-group" style="direction: rtl;text-align: right;">
+  <li class="list-group-item bg-info" *ngFor="let item of documents">
+    <a style="cursor: pointer;"
+    (click)="navigation(item)"
+    >
+    {{item.fileName}}</a>
+  </li>
+</ul>

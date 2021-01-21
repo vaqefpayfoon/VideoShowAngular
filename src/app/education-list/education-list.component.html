@@ -1,0 +1,13 @@
+
+<!-- [panelClass]="customClass" -->
+<div style="direction: rtl;text-align: right;margin-right: 30px;">
+  <accordion [isAnimated]="true" [closeOthers]="oneAtATime">
+    <accordion-group *ngFor="let educationEl of educationTopics" heading='{{educationEl.educationalTopicName}}' [panelClass]="customClass">          
+      <app-education-details 
+      [educationTopic]= "educationEl"      
+      (featureSelected)="onNavigate($event)"
+      ></app-education-details>
+
+    </accordion-group>
+  </accordion>
+</div>
